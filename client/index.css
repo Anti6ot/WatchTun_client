@@ -1,0 +1,66 @@
+body {
+  font-family: "Segoe UI";
+  text-align: center;
+  padding: 0; /* Убираем отступы */
+  margin: 0; /* Убираем внешние отступы */
+  height: 100vh; /* Обеспечивает, что тело занимает всю высоту окна */
+  background-image: url("assets/background_pc.webp");
+  background-size: cover; /* Растянуть изображение на весь экран */
+  background-position: center; /* Центрировать изображение */
+  background-repeat: no-repeat; /* Избежать повторения */
+  transition: all 0.3s ease;
+}
+#footer {
+  position: fixed; /* Фиксируем элемент */
+  bottom: 0;       /* Располагаем его внизу страницы */
+  left: 0;      
+  height: 20%;   /* Чтобы он был по ширине от левого края */
+  width: 100%;     /* Чтобы ширина была равна 100% от ширины экрана */
+  text-align: center; /* Выравнивание текста по центру */
+  padding-bottom: 100px;  /* Отступы сверху и снизу */
+
+}
+#logContainer {
+  width: 80%;
+  margin: 20px auto;
+  padding: 10px;
+  background-color: rgba(56, 0, 124, 0.567);
+  color: rgb(4, 234, 0);
+  font-family: monospace;
+  height: 300px;
+  overflow-y: auto;
+  border-radius: 5px;
+}
+#logOutput {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+#h2rejim {
+  font-family: "fantasy";
+  background-color: rgb(255, 179, 0);
+}
+#app {
+  flex: 1;
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+button {
+  padding: 10px 20px;
+  margin: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+button:hover {
+  background-color: #ddd;
+}
+#status {
+  margin-top: 20px;
+  font-weight: bold;
+}
+.hidden {
+  display: none;
+}

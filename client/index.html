@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <title>VPN App</title>
+    <style>
+     
+    </style>
+  </head>
+  <body>
+    <div id="app">
+      <div id="modeSelection">
+        <h2 id="h2rejim">Выберите режим использования:</h2>
+        <button id="freeVpn">Бесплатный VPN</button>
+        <button id="disconnectBtn">Отключиться от VPN</button>
+        <button id="login">Авторизация</button>
+        <div id="status"></div>
+        <div id="logContainer">
+          <select id="logFilter">
+            <option value="all">Все</option>
+            <option value="info">Информация</option>
+            <option value="error">Ошибки</option>
+          </select>
+          <h3>Логи:</h3>
+          <div id="logOutput"></div>
+        </div>
+      </div>
+
+      <div id="authForm" class="hidden">
+        <h2>Авторизация</h2>
+        <input type="text" id="username" placeholder="Логин" />
+        <input type="password" id="password" placeholder="Пароль" />
+        <div id="authMessage" style="color: red;"></div>
+        <button id="submitLogin">Войти</button>
+        <button id="backToMenu">Назад</button>
+      </div>
+
+      <div id="homePage" class="hidden">
+        <h1>Домашняя страница VPN</h1>
+        <label for="server">Выберите сервер:</label>
+        <select id="server">
+          <option value="Netherland">Нидерланды</option>
+        </select>
+        <br /><br />
+        <button id="connectBtn">Подключиться к VPN</button>
+        <button id="disconnectBtn">Отключиться от VPN</button>
+        <button id="downloadBtn">Скачать .ovpn</button>
+      </div>
+    </div>
+        <!-- Добавление footer с поддержкой проекта -->
+        <div id="footer">
+          <p>Поддержать проект можно на <a href="https://www.donationalerts.com/r/anti_6ot/payment" target="_blank">Donation Alerts</a></p>
+          <img src="./assets/tonwallet.png" alt="QR Code для поддержки проекта" style="max-width: 100px; margin: 10px auto;" />
+          <p>Адрес кошелька: UQAQdoZdTrtSCd4BoMTUMnwZWz-VTLRmZZ4iQF79zRRmKHW5</p>
+        </div>
+    <script src="script.js"></script>
+  </body>
+</html>
